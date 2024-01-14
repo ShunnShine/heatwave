@@ -17,5 +17,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
     {"name":"Beaver","order":1,"path":"folders/Sprites/Beaver.yy",},
   ],
-  "ResourceOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"Beaver_Sideview_Walking","order":1,"path":"sprites/Beaver_Sideview_Walking/Beaver_Sideview_Walking.yy",},
+  ],
 }
