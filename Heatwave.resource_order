@@ -19,5 +19,7 @@
   ],
   "ResourceOrderSettings": [
     {"name":"Beaver_Sideview_Walking","order":1,"path":"sprites/Beaver_Sideview_Walking/Beaver_Sideview_Walking.yy",},
+    {"name":"Beaver_Frontview_Idle","order":2,"path":"sprites/Beaver_Frontview_Idle/Beaver_Frontview_Idle.yy",},
+    {"name":"Beaver_Frontview_Walking","order":3,"path":"sprites/Beaver_Frontview_Walking/Beaver_Frontview_Walking.yy",},
   ],
 }
