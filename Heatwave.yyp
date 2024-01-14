@@ -37,6 +37,7 @@
   "resources": [
     {"id":{"name":"Beaver_Sideview_Idle","path":"sprites/Beaver_Sideview_Idle/Beaver_Sideview_Idle.yy",},},
     {"id":{"name":"oBeaver","path":"objects/oBeaver/oBeaver.yy",},},
+    {"id":{"name":"Beaver_Sideview_Walking","path":"sprites/Beaver_Sideview_Walking/Beaver_Sideview_Walking.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [
