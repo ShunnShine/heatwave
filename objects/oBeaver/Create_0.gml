@@ -1,3 +1,3 @@
-/// @description Insert description here
+/// @description Initialize path variable
 
 path_to_mouse = noone;
