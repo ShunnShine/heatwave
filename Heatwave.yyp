@@ -36,6 +36,8 @@
   },
   "resources": [
     {"id":{"name":"sh_outline_shader","path":"shaders/sh_outline_shader/sh_outline_shader.yy",},},
+    {"id":{"name":"Beaver_Dumpy_Walking","path":"sprites/Beaver_Dumpy_Walking/Beaver_Dumpy_Walking.yy",},},
+    {"id":{"name":"Beaver_Dumpy_Idle","path":"sprites/Beaver_Dumpy_Idle/Beaver_Dumpy_Idle.yy",},},
     {"id":{"name":"Beaver_Sideview_Idle","path":"sprites/Beaver_Sideview_Idle/Beaver_Sideview_Idle.yy",},},
     {"id":{"name":"oBeaver","path":"objects/oBeaver/oBeaver.yy",},},
     {"id":{"name":"Beaver_Sideview_Walking","path":"sprites/Beaver_Sideview_Walking/Beaver_Sideview_Walking.yy",},},
