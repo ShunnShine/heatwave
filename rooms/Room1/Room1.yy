@@ -41,14 +41,14 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "roomSettings": {
-    "Height": 768,
+    "Height": 260,
     "inheritRoomSettings": false,
     "persistent": false,
-    "Width": 1366,
+    "Width": 480,
   },
   "sequenceId": null,
   "views": [
-    {"hborder":100,"hport":1000,"hspeed":-1,"hview":300,"inherit":false,"objectId":null,"vborder":100,"visible":true,"vspeed":-1,"wport":1000,"wview":300,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":100,"hport":720,"hspeed":-1,"hview":260,"inherit":false,"objectId":null,"vborder":100,"visible":true,"vspeed":-1,"wport":1280,"wview":480,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
