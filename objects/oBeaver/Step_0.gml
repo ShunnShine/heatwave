@@ -1,9 +1,19 @@
 /// @description rotate to movement
 
-image_angle = direction;
-if image_angle > 90 && image_angle < 270 {
-	image_yscale = -1;
+if direction < 45 || direction >= 315 {
+	image_xscale = 1;
+	sprite_index = walking ? Beaver_Sideview_Walking : Beaver_Sideview_Idle;
+
 }
-else {
-	image_yscale = 1;
+else if direction < 135 {
+	image_xscale = 1;
+	sprite_index = walking ? Beaver_Dumpy_Walking : Beaver_Dumpy_Idle;
+}
+else if direction < 225 {
+	image_xscale = -1;
+	sprite_index = walking ? Beaver_Sideview_Walking : Beaver_Sideview_Idle;
+}
+else if direction < 315 {
+	image_xscale = 1;
+	sprite_index = walking ? Beaver_Frontview_Walking : Beaver_Frontview_Idle;
 }
