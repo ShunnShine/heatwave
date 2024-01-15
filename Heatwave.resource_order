@@ -14,9 +14,9 @@
     {"name":"Sounds","order":3,"path":"folders/Sounds.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Beaver","order":1,"path":"folders/Sprites/Beaver.yy",},
+    {"name":"Log","order":2,"path":"folders/Sprites/Log.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"Log","order":2,"path":"folders/Sprites/Log.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"Beaver_Dumpy_Walking","order":5,"path":"sprites/Beaver_Dumpy_Walking/Beaver_Dumpy_Walking.yy",},
