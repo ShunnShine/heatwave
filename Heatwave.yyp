@@ -27,6 +27,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Beaver","folderPath":"folders/Sprites/Beaver.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Log","folderPath":"folders/Sprites/Log.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
@@ -35,6 +36,7 @@
     "IDEVersion": "2023.11.1.129",
   },
   "resources": [
+    {"id":{"name":"Log_Front","path":"sprites/Log_Front/Log_Front.yy",},},
     {"id":{"name":"sh_outline_shader","path":"shaders/sh_outline_shader/sh_outline_shader.yy",},},
     {"id":{"name":"Beaver_Dumpy_Walking","path":"sprites/Beaver_Dumpy_Walking/Beaver_Dumpy_Walking.yy",},},
     {"id":{"name":"Beaver_Dumpy_Idle","path":"sprites/Beaver_Dumpy_Idle/Beaver_Dumpy_Idle.yy",},},
@@ -43,6 +45,7 @@
     {"id":{"name":"Beaver_Sideview_Walking","path":"sprites/Beaver_Sideview_Walking/Beaver_Sideview_Walking.yy",},},
     {"id":{"name":"Beaver_Frontview_Idle","path":"sprites/Beaver_Frontview_Idle/Beaver_Frontview_Idle.yy",},},
     {"id":{"name":"Beaver_Frontview_Walking","path":"sprites/Beaver_Frontview_Walking/Beaver_Frontview_Walking.yy",},},
+    {"id":{"name":"Log_Side","path":"sprites/Log_Side/Log_Side.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [
