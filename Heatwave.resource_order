@@ -16,6 +16,7 @@
     {"name":"Beaver","order":1,"path":"folders/Sprites/Beaver.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"Log","order":2,"path":"folders/Sprites/Log.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"Beaver_Dumpy_Walking","order":5,"path":"sprites/Beaver_Dumpy_Walking/Beaver_Dumpy_Walking.yy",},
@@ -23,5 +24,6 @@
     {"name":"Beaver_Sideview_Walking","order":1,"path":"sprites/Beaver_Sideview_Walking/Beaver_Sideview_Walking.yy",},
     {"name":"Beaver_Frontview_Idle","order":2,"path":"sprites/Beaver_Frontview_Idle/Beaver_Frontview_Idle.yy",},
     {"name":"Beaver_Frontview_Walking","order":3,"path":"sprites/Beaver_Frontview_Walking/Beaver_Frontview_Walking.yy",},
+    {"name":"Log_Side","order":1,"path":"sprites/Log_Side/Log_Side.yy",},
   ],
 }
