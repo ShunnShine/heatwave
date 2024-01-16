@@ -1,4 +1,4 @@
-/// @description start hovered
+/// @description hover on
 
 if global.pause return;
 

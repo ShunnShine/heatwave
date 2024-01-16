@@ -1,3 +1,3 @@
-/// @description Swap to Idle Animation
+/// @description idle on path end
 
 walking = false;

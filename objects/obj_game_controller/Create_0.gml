@@ -1,5 +1,7 @@
 global.pause = false;
 
+global.selected_object = noone;
+
 //draw the movement grid
 grid = mp_grid_create(0, 0, room_width / 8, room_height / 8, 8, 8);
 

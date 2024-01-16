@@ -1,8 +1,8 @@
-/// @description Select this beaver
+/// @description select this beaver
 
 if global.pause return;
 
-selected = true;
+global.selected_object = id;
 
 
 

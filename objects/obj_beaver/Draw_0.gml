@@ -1,9 +1,9 @@
-/// @description Outline Beaver
+/// @description draw beaver/shader code
 
 var _pixel_height = texture_get_texel_height(sprite_get_texture(sprite_index, image_index));
 var _pixel_width = texture_get_texel_width(sprite_get_texture(sprite_index, image_index));
 
-if hovered && !selected && !global.pause {
+if hovered && global.selected_object != id && !global.pause {
 	shader_set(sh_outline_shader);
 	shader_set_uniform_f(shader_color, 1, 1, 0, 1);
 	shader_set_uniform_f(shader_pixel_height, _pixel_height);
@@ -11,7 +11,7 @@ if hovered && !selected && !global.pause {
 	draw_self();
 	shader_reset();
 }
-else if selected {
+else if global.selected_object == id {
 	shader_set(sh_outline_shader);
 	shader_set_uniform_f(shader_color, 0, 1, 0, 1);
 	shader_set_uniform_f(shader_pixel_height, _pixel_height);
