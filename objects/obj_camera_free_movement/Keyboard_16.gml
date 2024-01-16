@@ -1,0 +1,1 @@
+camera_move_multiplier = 2;

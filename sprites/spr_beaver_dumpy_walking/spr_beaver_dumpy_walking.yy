@@ -30,7 +30,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"116c342b-3a7c-4a60-910e-fa8cb8f4caca","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 9,
+  "origin": 1,
   "parent": {
     "name": "Beaver",
     "path": "folders/Sprites/Beaver.yy",
@@ -74,7 +74,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 14,
-    "yorigin": 11,
+    "yorigin": 0,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

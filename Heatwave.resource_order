@@ -27,6 +27,7 @@
     {"name":"spr_log_side_dead","order":2,"path":"sprites/spr_log_side_dead/spr_log_side_dead.yy",},
     {"name":"spr_beaver_sideview_walking","order":1,"path":"sprites/spr_beaver_sideview_walking/spr_beaver_sideview_walking.yy",},
     {"name":"spr_beaver_frontview_idle","order":2,"path":"sprites/spr_beaver_frontview_idle/spr_beaver_frontview_idle.yy",},
+    {"name":"obj_camera_free_movement","order":3,"path":"objects/obj_camera_free_movement/obj_camera_free_movement.yy",},
     {"name":"spr_beaver_frontview_walking","order":3,"path":"sprites/spr_beaver_frontview_walking/spr_beaver_frontview_walking.yy",},
     {"name":"obj_log","order":1,"path":"objects/obj_log/obj_log.yy",},
     {"name":"spr_log_side","order":1,"path":"sprites/spr_log_side/spr_log_side.yy",},

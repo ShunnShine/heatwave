@@ -2,8 +2,10 @@
 var _x = x;
 var _y = y;
 
-if global.selected_object != noone
+if global.selected_object != noone {
 	mp_grid_clear_rectangle(obj_game_controller.grid, x, y + 8, x + 32, y + 16);
+	global.targeted_object = id;
+}
 
 with (global.selected_object) {
 	//find a way to prevent all of this code from running if the mouse was released over this object

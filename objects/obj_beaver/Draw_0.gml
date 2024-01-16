@@ -1,23 +1,11 @@
 /// @description draw beaver/shader code
 
-var _pixel_height = texture_get_texel_height(sprite_get_texture(sprite_index, image_index));
-var _pixel_width = texture_get_texel_width(sprite_get_texture(sprite_index, image_index));
-
+//checks that this object is being hovered, this object is not currently selected, and the game is not paused
 if hovered && global.selected_object != id && !global.pause {
-	shader_set(sh_outline_shader);
-	shader_set_uniform_f(shader_color, 1, 1, 0, 1);
-	shader_set_uniform_f(shader_pixel_height, _pixel_height);
-	shader_set_uniform_f(shader_pixel_width, _pixel_width);
-	draw_self();
-	shader_reset();
+	draw_outline(id, global.hover_color);
 }
-else if global.selected_object == id {
-	shader_set(sh_outline_shader);
-	shader_set_uniform_f(shader_color, 0, 1, 0, 1);
-	shader_set_uniform_f(shader_pixel_height, _pixel_height);
-	shader_set_uniform_f(shader_pixel_width, _pixel_width);
-	draw_self();
-	shader_reset();
-} else {
+else if global.selected_object == id { // if the object is selected, this will change the shader to green
+	draw_outline(id, global.selected_color);
+} else { // THIS DRAWS THE SPRITE, MAKE SURE THIS IS ALWAYS REACHABLE
 	draw_self();
 }
