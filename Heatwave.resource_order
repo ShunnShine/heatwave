@@ -15,9 +15,9 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Beaver","order":1,"path":"folders/Sprites/Beaver.yy",},
     {"name":"Log","order":2,"path":"folders/Sprites/Log.yy",},
+    {"name":"Tile Sprites","order":3,"path":"folders/Sprites/Tile Sprites.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"Tile Sprites","order":3,"path":"folders/Sprites/Tile Sprites.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_game_controller","order":2,"path":"objects/obj_game_controller/obj_game_controller.yy",},

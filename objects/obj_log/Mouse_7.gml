@@ -1,6 +1,8 @@
-/// @description Insert description here
+/// @description select and pathfind to log
 var _x = x;
 var _y = y;
+
+if global.pause return;
 
 if global.selected_object != noone {
 	mp_grid_clear_rectangle(obj_game_controller.grid, x, y + 8, x + 32, y + 16);
