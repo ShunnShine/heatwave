@@ -20,7 +20,7 @@
     {"name":"Tile Sprites","order":3,"path":"folders/Sprites/Tile Sprites.yy",},
   ],
   "ResourceOrderSettings": [
-    {"name":"obj_grid_controller","order":2,"path":"objects/obj_grid_controller/obj_grid_controller.yy",},
+    {"name":"obj_game_controller","order":2,"path":"objects/obj_game_controller/obj_game_controller.yy",},
     {"name":"spr_beaver_dumpy_walking","order":5,"path":"sprites/spr_beaver_dumpy_walking/spr_beaver_dumpy_walking.yy",},
     {"name":"spr_water_tileset","order":1,"path":"sprites/spr_water_tileset/spr_water_tileset.yy",},
     {"name":"spr_beaver_dumpy_idle","order":4,"path":"sprites/spr_beaver_dumpy_idle/spr_beaver_dumpy_idle.yy",},

@@ -1,5 +1,8 @@
 /// @description rotate to movement
 
+if global.pause path_speed = 0;
+else path_speed = beaver_speed;
+
 if direction < 45 || direction >= 315 {
 	image_xscale = 1;
 	sprite_index = walking ? spr_beaver_sideview_walking : spr_beaver_sideview_idle;
