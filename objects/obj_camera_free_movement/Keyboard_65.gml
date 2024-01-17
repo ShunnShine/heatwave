@@ -1,1 +1,1 @@
-x = x - camera_move_speed * camera_move_multiplier;
+if !global.pause x = x - camera_move_speed * camera_move_multiplier;

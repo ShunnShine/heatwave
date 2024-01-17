@@ -1,16 +1,18 @@
 /// @description select and pathfind to log
 var _x = x;
 var _y = y;
+var _this = id;
 
 if global.pause return;
 
-if global.selected_object != noone {
-	mp_grid_clear_rectangle(obj_game_controller.grid, x, y + 8, x + 32, y + 16);
+if global.selected_beaver != noone {
+	mp_grid_clear_rectangle(obj_game_controller.grid, x - 14, y - 14, x + 14, y + 14);
 	global.targeted_object = id;
+	targeting_beaver = global.selected_beaver;
 }
 
-with (global.selected_object) {
-	//find a way to prevent all of this code from running if the mouse was released over this object
+with (global.selected_beaver) {
+	targeted_log = _this;
 	path_to_mouse = path_add();
 	mp_grid_path(obj_game_controller.grid, path_to_mouse,
 		x,

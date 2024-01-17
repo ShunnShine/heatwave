@@ -6,7 +6,7 @@ global.camera = view_camera[0];
 global.camera_move_object = instance_find(obj_camera_free_movement, 0);
 room_set_camera(room, 0, global.camera);
 
-global.selected_object = noone;
+global.selected_beaver = noone;
 global.targeted_object = noone;
 
 //selection color

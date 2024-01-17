@@ -6,7 +6,7 @@ var _target_tile = {
 	y: mouse_y - mouse_y % global.tile_height + global.tile_height/2
 }
 
-if !global.pause && global.selected_object == id && !hovered {
+if !global.pause && global.selected_beaver == id && !hovered {
 	
 	path_to_mouse = path_add();
 	if mp_grid_path(obj_game_controller.grid, path_to_mouse,
