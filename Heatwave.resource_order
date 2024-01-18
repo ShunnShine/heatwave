@@ -25,6 +25,7 @@
     {"name":"spr_water_tileset","order":1,"path":"sprites/spr_water_tileset/spr_water_tileset.yy",},
     {"name":"spr_beaver_dumpy_idle","order":4,"path":"sprites/spr_beaver_dumpy_idle/spr_beaver_dumpy_idle.yy",},
     {"name":"spr_log_side_dead","order":2,"path":"sprites/spr_log_side_dead/spr_log_side_dead.yy",},
+    {"name":"spr_tile_select","order":2,"path":"sprites/spr_tile_select/spr_tile_select.yy",},
     {"name":"spr_beaver_sideview_walking","order":1,"path":"sprites/spr_beaver_sideview_walking/spr_beaver_sideview_walking.yy",},
     {"name":"spr_beaver_frontview_idle","order":2,"path":"sprites/spr_beaver_frontview_idle/spr_beaver_frontview_idle.yy",},
     {"name":"obj_camera_free_movement","order":3,"path":"objects/obj_camera_free_movement/obj_camera_free_movement.yy",},

@@ -6,6 +6,10 @@ global.camera = view_camera[0];
 global.camera_move_object = instance_find(obj_camera_free_movement, 0);
 room_set_camera(room, 0, global.camera);
 
+global.camera_zoom_speed = 5;
+global.camera_width = camera_get_view_width(global.camera);
+global.camera_height = camera_get_view_height(global.camera);
+
 global.selected_beaver = noone;
 global.targeted_object = noone;
 
