@@ -1,8 +1,13 @@
 /// @description update sprites
 
 //stops object if game is paused
-if global.pause path_speed = 0;
-else path_speed = beaver_speed;
+if global.pause {
+	path_speed = 0;
+	image_speed = 0;
+} else { 
+	path_speed = beaver_speed;
+	image_speed = 1 ;
+}
 
 //changes the sprite based on the direction the object is moving
 if direction < 45 || direction >= 315 {

@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_tile_select",
-  "bbox_bottom": 7,
+  "name": "spr_water_tileset_alternate",
+  "bbox_bottom": 127,
   "bbox_left": 0,
-  "bbox_right": 7,
+  "bbox_right": 31,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"983f75c2-63d5-4283-a8c7-3a527ae489a4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4dd00b5f-508a-4769-a695-852fc4a4b14f",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 8,
+  "height": 128,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ef82d452-86af-4644-91fe-eab4487824fe","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4800865d-0184-4488-82ea-14b23594d09c","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_tile_select",
+    "name": "spr_water_tileset_alternate",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"983f75c2-63d5-4283-a8c7-3a527ae489a4","path":"sprites/spr_tile_select/spr_tile_select.yy",},},},"Disabled":false,"id":"0c8b339e-2336-46f4-bba6-749561b88983","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4dd00b5f-508a-4769-a695-852fc4a4b14f","path":"sprites/spr_water_tileset_alternate/spr_water_tileset_alternate.yy",},},},"Disabled":false,"id":"7ef074f5-0204-440c-a367-d96b0f3c8c1e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 8,
+  "width": 32,
 }
