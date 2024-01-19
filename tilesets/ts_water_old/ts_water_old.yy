@@ -1,7 +1,7 @@
 {
   "resourceType": "GMTileSet",
   "resourceVersion": "1.0",
-  "name": "ts_water",
+  "name": "ts_water_old",
   "autoTileSets": [
     {"resourceType":"GMAutoTileSet","resourceVersion":"1.0","name":"autotile_1","closed_edge":false,"tiles":[
         1,
@@ -35,8 +35,8 @@
     "path": "folders/Tile Sets.yy",
   },
   "spriteId": {
-    "name": "spr_water_tileset",
-    "path": "sprites/spr_water_tileset/spr_water_tileset.yy",
+    "name": "spr_water_tileset_old",
+    "path": "sprites/spr_water_tileset_old/spr_water_tileset_old.yy",
   },
   "spriteNoExport": false,
   "textureGroupId": {
