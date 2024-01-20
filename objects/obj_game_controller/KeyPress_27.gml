@@ -6,8 +6,3 @@ if !global.pause {
 else if global.pause {
 	global.pause = false;
 }
-
-
-
-
-
