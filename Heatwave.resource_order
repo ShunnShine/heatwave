@@ -40,6 +40,7 @@
     {"name":"spr_log_side","order":1,"path":"sprites/spr_log_side/spr_log_side.yy",},
     {"name":"spr_water_tileset_48","order":3,"path":"sprites/spr_water_tileset_48/spr_water_tileset_48.yy",},
     {"name":"bitmask_check_tile","order":1,"path":"scripts/bitmask_check_tile/bitmask_check_tile.yy",},
+    {"name":"obj_log_placeholder","order":7,"path":"objects/obj_log_placeholder/obj_log_placeholder.yy",},
     {"name":"bitmask_update_tile","order":3,"path":"scripts/bitmask_update_tile/bitmask_update_tile.yy",},
   ],
 }

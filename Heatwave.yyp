@@ -66,6 +66,7 @@
     {"id":{"name":"spr_log_side","path":"sprites/spr_log_side/spr_log_side.yy",},},
     {"id":{"name":"spr_water_tileset_48","path":"sprites/spr_water_tileset_48/spr_water_tileset_48.yy",},},
     {"id":{"name":"bitmask_check_tile","path":"scripts/bitmask_check_tile/bitmask_check_tile.yy",},},
+    {"id":{"name":"obj_log_placeholder","path":"objects/obj_log_placeholder/obj_log_placeholder.yy",},},
     {"id":{"name":"bitmask_update_tile","path":"scripts/bitmask_update_tile/bitmask_update_tile.yy",},},
     {"id":{"name":"Primary","path":"rooms/Primary/Primary.yy",},},
   ],
