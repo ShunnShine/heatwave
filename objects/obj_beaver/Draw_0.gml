@@ -1,5 +1,7 @@
 /// @description draw beaver/shader code
 
+depth = -y;
+
 //checks that this object is being hovered, this object is not currently selected, and the game is not paused
 if hovered && global.selected_beaver != id && !global.pause {
 	draw_outline(id, global.hover_color);
