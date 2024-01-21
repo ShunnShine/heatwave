@@ -51,8 +51,6 @@ function bitmask_check_tile(tilemap, tile_x, tile_y){
 	// uses binary directional values to combine the values of the adjacent tiles, and returns an index value
 	_tile_mask = _adj_tiles.nw + 2 * _adj_tiles.n + 4 * _adj_tiles.ne + 8 * _adj_tiles.w + 16 * _adj_tiles.e + 32 * _adj_tiles.sw + 64 * _adj_tiles.s + 128 * _adj_tiles.se;
 	
-	show_debug_message(_tile_mask);
-	
 	_tile_mask = ds_map_find_value(_map, string(_tile_mask));
 
 	ds_map_destroy(_map);
