@@ -1,0 +1,16 @@
+-- A list of smaller QoL or polish features for reference --
+
+	currently, logs can be placed anywhere, even though the cursor highlights red when it is colliding with 
+another object. I am not sure where the conditional for this color change is, but there should be an added 
+function to prevent pathfinding while it is red
+
+	Make it so that the log cursor dissapears when hovering over a selectable
+object (e.g. another beaver (when hovering over other logs with the log cursor, the placed log highlighting
+should be turned off, rather than the log cursor))
+
+	A right click menu, which allows you to choose to focus on a beaver, rather than it automatically focusing.
+This menu would also serve other purposes later on, such as being able to view beaver information, skills, etc.
+
+	Make it so that the tile selection square is thicker when zoomed in
+	
+	 

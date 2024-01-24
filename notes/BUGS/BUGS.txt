@@ -1,0 +1,14 @@
+--- a list of bugs, the day they were found, and the day they were fixed ---
+
+format: Found Date -- Bug Name -- Bug Description (if needed) -- Fixed date
+
+1/23/24 -- Beaver z-indexing bug -- Beaver will clip through the logs when moved to be one square the 
+	right/left -- NOT FIXED
+1/23/24 -- Beaver grid movement bug -- If a beaver carrying a log that is unselected finishes its path, 
+	it will get stuck in the placed log's blocked squares. only occurs with deselected beavers -- NOT FIXED
+1/23/24 -- Log blocked squares -- When placed, log will not re-add the blocked squares correctly -- NOT FIXED
+1/23/24 -- Log downwards placing -- When placing the log with the beaver facing downwards, the log will get
+	placed one square too high -- NOT FIXED
+1/23/24 -- Multi-select bug -- When hovering over multiple objects overlayed over each other (e.g. beavers and logs)
+	they will both be highlighted -- NOT FIXED
+1/23/24 -- Unselected beaver log pickup -- unselected beavers will not pick up logs when their path ends -- NOT FIXED
