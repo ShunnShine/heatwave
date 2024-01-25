@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_water_tileset_48",
-  "bbox_bottom": 167,
-  "bbox_left": 0,
-  "bbox_right": 63,
+  "name": "spr_sand",
+  "bbox_bottom": 15,
+  "bbox_left": 16,
+  "bbox_right": 31,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,26 +13,26 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3a4e7350-86ae-4f1a-966c-a9e76e4b1d47",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"29fad6c2-f7d2-4b3c-992e-8d563ada131a",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 168,
+  "height": 16,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e253ad02-dee8-4d81-a92a-cdcffd7be8f6","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9db88cbc-07c7-4d16-8191-ea063f820bd4","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "water",
-    "path": "folders/Sprites/Tile Sprites/water.yy",
+    "name": "sand",
+    "path": "folders/Sprites/Tile Sprites/sand.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_water_tileset_48",
+    "name": "spr_sand",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3a4e7350-86ae-4f1a-966c-a9e76e4b1d47","path":"sprites/spr_water_tileset_48/spr_water_tileset_48.yy",},},},"Disabled":false,"id":"7d978e52-6757-4ddb-a2dc-9096b2e4b175","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"29fad6c2-f7d2-4b3c-992e-8d563ada131a","path":"sprites/spr_sand/spr_sand.yy",},},},"Disabled":false,"id":"7829f567-1bc1-4794-ad9a-351a7c30a360","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 64,
+  "width": 32,
 }
