@@ -1,12 +1,15 @@
 /// @description initialize instance variables
 
-lay_id = layer_get_id("Ground");
-map_id = layer_tilemap_get_id(lay_id);
+ground_lay_id = layer_get_id("Ground");
+ground_map_id = layer_tilemap_get_id(ground_lay_id);
+water_lay_id = layer_get_id("Water");
+water_map_id = layer_tilemap_get_id(water_lay_id);
 selected_tile = {
-	tiledata: 0,
 	x: 0,
 	y: 0
 };
+
+
 
 //this is where the beaver pathing is stored
 path_to_mouse = noone;
@@ -20,4 +23,6 @@ held_log = noone;
 hovered = false;
 
 walking = false;
-beaver_speed = 2;
+swimming = false;
+beaver_speed = 1;
+animation_speed = beaver_speed / 1.25;

@@ -12,3 +12,4 @@ format: Found Date -- Bug Name -- Bug Description (if needed) -- Fixed date
 1/23/24 -- Multi-select bug -- When hovering over multiple objects overlayed over each other (e.g. beavers and logs)
 	they will both be highlighted -- NOT FIXED
 1/23/24 -- Unselected beaver log pickup -- unselected beavers will not pick up logs when their path ends -- NOT FIXED
+1/24/24 -- beaver swimming sprite -- beaver swimming sprite will trigger even if not completely in water -- NOT FIXED

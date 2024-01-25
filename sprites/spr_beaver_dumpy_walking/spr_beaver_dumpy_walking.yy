@@ -32,8 +32,8 @@
   "nineSlice": null,
   "origin": 1,
   "parent": {
-    "name": "Beaver",
-    "path": "folders/Sprites/Beaver.yy",
+    "name": "Land",
+    "path": "folders/Sprites/Beaver/Land.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

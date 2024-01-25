@@ -13,4 +13,6 @@ This menu would also serve other purposes later on, such as being able to view b
 
 	Make it so that the tile selection square is thicker when zoomed in
 	
-	 
+	Make it so that the log will move with the beaver
+	
+	
