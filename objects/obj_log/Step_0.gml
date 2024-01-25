@@ -2,6 +2,6 @@
 
 if targeting_beaver && picked_up {
 	selected = false;
-	x = targeting_beaver.x;
-	y = targeting_beaver.y - pickup_transform;
+	x = targeting_beaver.x + x_offset;
+	y = targeting_beaver.y + y_offset;
 }

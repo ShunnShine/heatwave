@@ -1,10 +1,15 @@
 /// @description pathfind to mouse
 
-// this turns the cursor position into the 
+// this turns the cursor position into a tile
 var _target_tile = {
 	x: mouse_x - mouse_x % global.tile_width + global.tile_width/2,
 	y: mouse_y - mouse_y % global.tile_height + global.tile_height/2
 };
+
+// gets the tile that is currently under the mouse position
+selected_tile.tiledata = tilemap_get_at_pixel(map_id, mouse_x, mouse_y);
+selected_tile.x = tilemap_get_cell_x_at_pixel(map_id, mouse_x, mouse_y);
+selected_tile.y = tilemap_get_cell_y_at_pixel(map_id, mouse_x, mouse_y);
 
 if !global.pause && global.selected_beaver == id && !hovered {
 	

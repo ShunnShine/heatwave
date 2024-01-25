@@ -13,17 +13,48 @@ if global.pause {
 if direction < 45 || direction >= 315 {
 	image_xscale = 1;
 	sprite_index = walking ? spr_beaver_sideview_walking : spr_beaver_sideview_idle;
-
+	if (held_log) {
+		with held_log {
+			image_xscale = 1;
+			sprite_index = spr_log_side;
+			x_offset = -28;
+			y_offset = -12;
+		}
+	}
 }
 else if direction < 135 {
 	image_xscale = 1;
 	sprite_index = walking ? spr_beaver_dumpy_walking : spr_beaver_dumpy_idle;
+	if (held_log) {
+		with held_log {
+			image_xscale = 1;
+			sprite_index = spr_log_front;
+			x_offset = 0;
+			y_offset = 18;
+		}
+	}
 }
 else if direction < 225 {
 	image_xscale = -1;
 	sprite_index = walking ? spr_beaver_sideview_walking : spr_beaver_sideview_idle;
+	if (held_log) {
+		with held_log {
+			image_xscale = -1;
+			sprite_index = spr_log_side;
+			x_offset = 28;
+			y_offset = -12;
+		}
+	}
 }
 else if direction < 315 {
 	image_xscale = 1;
 	sprite_index = walking ? spr_beaver_frontview_walking : spr_beaver_frontview_idle;
+	if (held_log) {
+		with held_log {
+			image_xscale = -1;
+			sprite_index = spr_log_front;
+			x_offset = 0;
+			y_offset = -36;
+		}
+	}
 }
