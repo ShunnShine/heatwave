@@ -13,3 +13,5 @@ format: Found Date -- Bug Name -- Bug Description (if needed) -- Fixed date
 	they will both be highlighted -- NOT FIXED
 1/23/24 -- Unselected beaver log pickup -- unselected beavers will not pick up logs when their path ends -- NOT FIXED
 1/24/24 -- beaver swimming sprite -- beaver swimming sprite will trigger even if not completely in water -- NOT FIXED
+1/25/24 -- log sprite change place orientation -- log will place with the front sprite if beaver drops facing
+	down/up -- NOT FIXED
