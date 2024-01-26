@@ -1,7 +1,7 @@
 /// @description Check Producers and Consumers and Then update water bodies
 
 // naive way to slow down water production (its adjustable)
-if step_count != 1 {
+if step_count != 5 {
 	step_count++;
 	exit;
 }

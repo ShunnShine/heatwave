@@ -31,18 +31,11 @@ for (var _x_cell = 0; _x_cell < tile_width; _x_cell++;) {
 			}	
 			_visited_water.add(_coords.x, _coords.y);
 			_water_body.add(_coords.x, _coords.y);
-			if _coords.x != 0 {
-				ds_queue_enqueue(_queue, {x:_coords.x - 1, y:_coords.y})
-			}
-			if _coords.x != tile_width - 1 {
-				ds_queue_enqueue(_queue, {x:_coords.x + 1, y:_coords.y})
-			}
-			if _coords.y != 0 {
-				ds_queue_enqueue(_queue, {x:_coords.x, y:_coords.y - 1})
-			}
-			if _coords.y != tile_height - 1 {
-				ds_queue_enqueue(_queue, {x:_coords.x, y:_coords.y + 1})
-			}
+			
+			var _queue_neighbor = function(_neighbor_x, _neighbor_y, _queue) {
+				ds_queue_enqueue(_queue, {x:_neighbor_x, y:_neighbor_y});
+			};
+			foreach_neighbor(_coords.x,  _coords.y, tile_width, tile_height, _queue_neighbor, _queue);
 		}
 		ds_queue_destroy(_queue);
 		array_push(water_bodies, _water_body);
@@ -86,34 +79,19 @@ while !ds_queue_empty(_sand_layer_queue) {
 			sand_map.add(_coords.x, _coords.y, _depth);
 			
 			if tile_get_empty(tilemap_get(water_map_id, _coords.x, _coords.y)) {
-				if  (_coords.x != 0	&& tile_get_empty(tilemap_get(water_map_id, _coords.x - 1, _coords.y))) {
-					for(var i = 0; i < array_length(water_bodies); i++) {
-						if water_bodies[i].contains(_coords.x - 1, _coords.y) {
-							water_bodies[i].add_sand(_coords.x - 1, _coords.y, _depth);
+				var _check_neighbor = function(_neighbor_x, _neighbor_y, _extras) {
+					var _depth = _extras._depth;
+					var _x = _extras.x;
+					var _y = _extras.y;
+					if !tile_get_empty(tilemap_get(water_map_id, _neighbor_x, _neighbor_y)) {
+						for(var i = 0; i < array_length(water_bodies); i++) {
+							if water_bodies[i].contains(_neighbor_x, _neighbor_y) {
+								water_bodies[i].add_sand(_x, _y, _depth);
+							}
 						}
 					}
-				}
-				if (_coords.x != tile_width - 1	&& tile_get_empty(tilemap_get(water_map_id, _coords.x + 1, _coords.y))) {
-					for(var i = 0; i < array_length(water_bodies); i++) {
-						if water_bodies[i].contains(_coords.x + 1, _coords.y) {
-							water_bodies[i].add_sand(_coords.x + 1, _coords.y, _depth);
-						}
-					}
-				}
-				if (_coords.y != 0 && tile_get_empty(tilemap_get(water_map_id, _coords.x, _coords.y - 1))) {
-					for(var i = 0; i < array_length(water_bodies); i++) {
-						if water_bodies[i].contains(_coords.x, _coords.y - 1) {
-							water_bodies[i].add_sand(_coords.x, _coords.y - 1, _depth);
-						}
-					}
-				}
-				if (_coords.y != tile_height - 1 && tile_get_empty(tilemap_get(water_map_id, _coords.x, _coords.y + 1))) {
-					for(var i = 0; i < array_length(water_bodies); i++) {
-						if water_bodies[i].contains(_coords.x, _coords.y + 1) {
-							water_bodies[i].add_sand(_coords.x, _coords.y + 1, _depth);
-						}
-					}
-				}
+				};
+				foreach_neighbor(_coords.x,  _coords.y, tile_width, tile_height, _check_neighbor, {_depth, x:_coords.x, y:_coords.y});
 			}
 		}
 		
@@ -169,7 +147,7 @@ add_water = function(_x_index, _y_index) {
 	
 	water_body = new WaterBody();
 	water_body.add(_x_index, _y_index);
-	check_neighbor = function(_neighbor_x, _neighbor_y) {
+	static _check_neighbor = function(_neighbor_x, _neighbor_y) {
 		if !tile_get_empty(tilemap_get(water_map_id, _neighbor_x, _neighbor_y)) {
 			for (var i = 0; i < array_length(water_bodies); i++) {
 				if water_bodies[i].contains(_neighbor_x, _neighbor_y) {
@@ -183,7 +161,7 @@ add_water = function(_x_index, _y_index) {
 			water_body.add_sand(_neighbor_x, _neighbor_y, sand_map.get(_neighbor_x, _neighbor_y));
 		}
 	};
-	foreach_neighbor(_x_index, _y_index, tile_width, tile_height, check_neighbor);
+	foreach_neighbor(_x_index, _y_index, tile_width, tile_height, _check_neighbor);
 	array_push(water_bodies, water_body);
 }
 
