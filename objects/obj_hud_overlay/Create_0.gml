@@ -1,0 +1,1 @@
+value_to_draw = 0;
