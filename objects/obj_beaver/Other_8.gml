@@ -10,7 +10,7 @@ if !targeted_log && !held_log && selected_tile.x != 0 && selected_tile.y != 0 {
 	selected_tile.y = 0;
 }
 
-if !swimming && targeted_log && !held_log {
+if /*!swimming &&*/ targeted_log && !held_log {
 	with targeted_log picked_up = true;
 	held_log = targeted_log;
 	with(obj_log_placeholder) {

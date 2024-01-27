@@ -10,6 +10,10 @@ function bitmask_update_tile_cell(layer_id, x_cell, y_cell, singular) {
 	if(!singular) {
 		for(var _x_offset = -1; _x_offset <= 1; _x_offset++;) {
 			for(var _y_offset = -1; _y_offset <= 1; _y_offset++;) {
+				if (x_cell + _x_offset < 0 || x_cell + _x_offset >= global.num_tiles_x ||
+					y_cell + _y_offset < 0 || y_cell + _y_offset >= global.num_tiles_y) {
+						continue;
+				}
 				var _tile = tilemap_get(_map_id, x_cell + _x_offset, y_cell + _y_offset);
 				if (!tile_get_empty(_tile)) {
 					var _tile_mask = bitmask_check_tile(_map_id, x_cell + _x_offset, y_cell + _y_offset);

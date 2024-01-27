@@ -105,8 +105,8 @@
     {"id":{"name":"Primary","path":"rooms/Primary/Primary.yy",},},
   ],
   "RoomOrderNodes": [
-    {"roomId":{"name":"Main_Menu","path":"rooms/Main_Menu/Main_Menu.yy",},},
     {"roomId":{"name":"Primary","path":"rooms/Primary/Primary.yy",},},
+    {"roomId":{"name":"Main_Menu","path":"rooms/Main_Menu/Main_Menu.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [

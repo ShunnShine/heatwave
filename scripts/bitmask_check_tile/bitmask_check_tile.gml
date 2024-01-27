@@ -23,29 +23,29 @@ function bitmask_check_tile(tilemap, tile_x, tile_y){
 	_map = json_decode(json);
 	
 	// checks for the "empty" state of the adjacent tiles and sets the struct values accordingly
-	if (!tile_get_empty(tilemap_get(tilemap, tile_x - 1, tile_y))) _adj_tiles.n = true;
+	if (tile_x != 0 && !tile_get_empty(tilemap_get(tilemap, tile_x - 1, tile_y))) _adj_tiles.n = true;
 	else _adj_tiles.n = false;
 	
-	if (!tile_get_empty(tilemap_get(tilemap, tile_x, tile_y - 1))) _adj_tiles.w = true;
+	if (tile_y != 0 && !tile_get_empty(tilemap_get(tilemap, tile_x, tile_y - 1))) _adj_tiles.w = true;
 	else _adj_tiles.w = false;
 	
-	if (!tile_get_empty(tilemap_get(tilemap, tile_x, tile_y + 1))) _adj_tiles.e = true;
+	if (tile_y != global.num_tiles_y - 1 && !tile_get_empty(tilemap_get(tilemap, tile_x, tile_y + 1))) _adj_tiles.e = true;
 	else _adj_tiles.e = false;
 	
-	if (!tile_get_empty(tilemap_get(tilemap, tile_x + 1, tile_y))) _adj_tiles.s = true;
+	if (tile_x != global.num_tiles_x - 1 && !tile_get_empty(tilemap_get(tilemap, tile_x + 1, tile_y))) _adj_tiles.s = true;
 	else _adj_tiles.s = false;
 	
 	// diagonal tile checks
-	if (!tile_get_empty(tilemap_get(tilemap, tile_x - 1, tile_y - 1)) && _adj_tiles.w && _adj_tiles.n) _adj_tiles.nw = true;
+	if (tile_x != 0 && tile_y != 0 && !tile_get_empty(tilemap_get(tilemap, tile_x - 1, tile_y - 1)) && _adj_tiles.w && _adj_tiles.n) _adj_tiles.nw = true;
 	else _adj_tiles.nw = false;
 	
-	if (!tile_get_empty(tilemap_get(tilemap, tile_x - 1, tile_y + 1)) && _adj_tiles.n && _adj_tiles.e) _adj_tiles.ne = true;
+	if (tile_x != 0 && tile_y != global.num_tiles_y - 1 && !tile_get_empty(tilemap_get(tilemap, tile_x - 1, tile_y + 1)) && _adj_tiles.n && _adj_tiles.e) _adj_tiles.ne = true;
 	else _adj_tiles.ne = false;
 	
-	if (!tile_get_empty(tilemap_get(tilemap, tile_x + 1, tile_y - 1)) && _adj_tiles.s && _adj_tiles.w) _adj_tiles.sw = true;
+	if (tile_x != global.num_tiles_x - 1 && tile_y != 0 && !tile_get_empty(tilemap_get(tilemap, tile_x + 1, tile_y - 1)) && _adj_tiles.s && _adj_tiles.w) _adj_tiles.sw = true;
 	else _adj_tiles.sw = false;
 	
-	if (!tile_get_empty(tilemap_get(tilemap, tile_x + 1, tile_y + 1)) && _adj_tiles.s && _adj_tiles.e) _adj_tiles.se = true;
+	if (tile_x != global.num_tiles_x - 1 && tile_y != global.num_tiles_y - 1 && !tile_get_empty(tilemap_get(tilemap, tile_x + 1, tile_y + 1)) && _adj_tiles.s && _adj_tiles.e) _adj_tiles.se = true;
 	else _adj_tiles.se = false;
 	
 	// uses binary directional values to combine the values of the adjacent tiles, and returns an index value
