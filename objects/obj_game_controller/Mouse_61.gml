@@ -1,6 +1,6 @@
 /// @description Camera zoom out
 
-if !global.pause && global.camera_width < 3840
+if global.camera_width < 3840
 	camera_set_view_size(global.camera, 
 	global.camera_width + global.camera_zoom_speed * 1.78, 
 	global.camera_height + global.camera_zoom_speed);

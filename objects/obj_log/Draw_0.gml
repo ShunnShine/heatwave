@@ -6,7 +6,7 @@ if picked_up {
 	depth = -y;
 }
 
-if !picked_up && hovered && !selected && !global.pause {
+if !picked_up && hovered && !selected {
 	draw_outline(id, global.hover_color);
 } else if selected {
 	draw_outline(id, global.selected_color);

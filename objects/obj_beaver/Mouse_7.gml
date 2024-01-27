@@ -1,7 +1,5 @@
 /// @description select this beaver
 
-if global.pause return;
-
 if (global.selected_beaver == id) {
 	camera_set_view_target(global.camera, id);
 	instance_destroy(global.camera_move_object);

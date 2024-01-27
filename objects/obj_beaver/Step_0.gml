@@ -1,14 +1,5 @@
 /// @description update sprites
 
-//stops object if game is paused
-if global.pause {
-	path_speed = 0;
-	image_speed = 0;
-} else { 
-	path_speed = beaver_speed;
-	image_speed = animation_speed;
-}
-
 current_tile = tilemap_get_at_pixel(water_map_id, x, y);
 
 if (current_tile) {

@@ -1,5 +1,4 @@
 //arguably the most important variable in the game
-global.pause = false;
 
 //change this if using more than 1 camera
 global.camera = view_camera[0];

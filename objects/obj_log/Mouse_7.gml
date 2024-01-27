@@ -3,8 +3,6 @@ var _x = x;
 var _y = y;
 var _this = id;
 
-if global.pause return;
-
 if global.selected_beaver != noone {
 	mp_grid_clear_rectangle(obj_game_controller.grid, x - 14, y - 14, x + 14, y + 14);
 	targeting_beaver = global.selected_beaver;

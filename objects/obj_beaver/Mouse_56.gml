@@ -10,7 +10,7 @@ var _target_tile = {
 selected_tile.x = tilemap_get_cell_x_at_pixel(ground_map_id, mouse_x, mouse_y);
 selected_tile.y = tilemap_get_cell_y_at_pixel(ground_map_id, mouse_x, mouse_y);
 
-if !global.pause && global.selected_beaver == id && !hovered {
+if global.selected_beaver == id && !hovered {
 	
 	path_to_mouse = path_add();
 	if mp_grid_path(obj_game_controller.grid, 
