@@ -28,6 +28,8 @@
     {"name":"water","order":4,"path":"folders/Sprites/Tile Sprites/water.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"UI","order":6,"path":"folders/Sprites/UI.yy",},
+    {"name":"HUD","order":13,"path":"folders/Objects/HUD.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_beaver_dumpy_water_idle","order":2,"path":"sprites/spr_beaver_dumpy_water_idle/spr_beaver_dumpy_water_idle.yy",},
